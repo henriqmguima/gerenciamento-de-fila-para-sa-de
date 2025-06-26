@@ -17,7 +17,7 @@ class AddUsuarioIdToFichas extends Migration
             ]
         ]);
 
-        // Criar relação (opcional, se quiser usar FK real)
+        // Criar relação
         $this->db->query('ALTER TABLE fichas ADD CONSTRAINT fk_usuario_id FOREIGN KEY (usuario_id) REFERENCES usuarios(id) ON DELETE SET NULL');
     }
 
