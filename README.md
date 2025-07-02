@@ -67,7 +67,7 @@ database.default.DBDriver = MySQLi
 4. **Crie o banco de dados e rode as Demos**
 
 ```bash
-php spark migrate
+php spark migrate --all
 php spark db:seed DemoSeeder
 ```
 
