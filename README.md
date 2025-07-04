@@ -1,7 +1,7 @@
 
 # 📋 Ficha Um
 
-**Ficha Um** é um sistema de gerenciamento de filas para atendimentos em unidades básicas de saúde, desenvolvido com CodeIgniter 4. Ele permite o registro de unidades, criação de fichas de atendimento, controle de status e visualização da posição na fila por parte dos usuários.
+**Ficha Um** é um sistema de gerenciamento de filas para atendimentos em unidades básicas de saúde, desenvolvido com CodeIgniter 4. Ele permite o registro de unidades, criação de fichas de atendimento, controle de status e visualização da posição na fila em tempo real por parte dos usuários.
 
 A inciativa do projeto veio através de suprir uma demanda do pronto atendimento das unidades de saúde pública que utilizam o SUS de Charqueadas/RS
 
@@ -34,7 +34,7 @@ A inciativa do projeto veio através de suprir uma demanda do pronto atendimento
 - PHP 8.1+
 - Composer
 - MySQL
-
+- Habilitar as extensões intl e mysqli no php.ini
 ---
 
 ## 🧪 Instalação e Execução
@@ -65,6 +65,10 @@ database.default.DBDriver = MySQLi
 ```
 
 4. **Crie o banco de dados e rode as Demos**
+
+Crie o banco de dados `sistema_filas` na sua máquina
+
+Execute os seguintes comandos no terminal do projeto: 
 
 ```bash
 php spark migrate --all
